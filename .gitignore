@@ -1,0 +1,14 @@
+.vscode
+.DS_Store
+data/
+external_src/*/__pycache__
+external_src/*/*/__pycache__
+external_src/*/*/*/__pycache__
+pretrained_models
+run_*.sh
+src/*.pyc
+src/__pycache__
+perturb_models/
+training
+validation
+testing
