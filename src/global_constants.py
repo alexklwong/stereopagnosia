@@ -28,7 +28,7 @@ PERTURB_METHOD                      = 'fgsm'
 PERTURB_MODE                        = 'both'
 OUTPUT_NORM                         = 0.02
 N_STEP                              = 40
-LEARNING_RATES                      = 2e-3
+LEARNING_RATE                       = 2e-3
 MOMENTUM                            = 0.47
 PROBABILITY_DIVERSE_INPUT           = 0.00
 
@@ -42,6 +42,8 @@ PERTURB_MODE_AVAILABLE              = ['both', 'left', 'right']
 # Stereo method settings
 STEREO_METHOD                       = 'psmnet'
 STEREO_MODEL_RESTORE_PATH           = os.path.join('pretrained_models', 'PSMNet', 'pretrained_model_KITTI2015.tar')
+
+STEREO_METHOD_AVAILABLE             = ['aanet', 'deeppruner', 'psmnet']
 
 MAX_DISPARITY_PSMNET                = 192
 MAX_DISPARITY_AANET                 = 192

@@ -39,13 +39,12 @@ parser.add_argument('--n_width',
     type=int, default=settings.N_WIDTH, help='Width of each sample')
 # Stereo model settings
 parser.add_argument('--stereo_method',
-    type=str, default='psmnet', help='Stereo method available: %s' % settings.DEPTH_METHOD_AVAILABLE)
+    type=str, default='psmnet', help='Stereo method available: %s' % settings.STEREO_METHOD_AVAILABLE)
 parser.add_argument('--stereo_model_restore_path',
     type=str, default='', help='Path to restore model checkpoint')
 # Output settings
 parser.add_argument('--output_path',
-    type=str, default=settings.CHECKPOINT_PATH, help='Path to save outputs')
-
+    type=str, default=settings.OUTPUT_PATH, help='Path to save outputs')
 # Hardware settings
 parser.add_argument('--device',
     type=str, default=settings.DEVICE, help='Device to use: gpu, cpu')

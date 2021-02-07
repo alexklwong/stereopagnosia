@@ -23,7 +23,7 @@ import datasets, data_utils
 import global_constants as settings
 from log_utils import log
 from stereo_model import StereoModel
-from perturb_main_new import validate
+from perturb_main import validate
 
 
 def run(image0_path,

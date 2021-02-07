@@ -5,8 +5,8 @@ export CUDA_VISIBLE_DEVICES=1
 
 # DeepPruner -> AANet
 python src/run_transferability.py \
---image0_path testing/kitti_scene_flow_image0.txt \
---image1_path testing/kitti_scene_flow_image1.txt \
+--image0_path testing/kitti_scene_flow_test_image0.txt \
+--image1_path testing/kitti_scene_flow_test_image1.txt \
 --noise0_dirpath perturb_models/deeppruner/fgsm/both_norm2e2/noise0_output \
 --noise1_dirpath perturb_models/deeppruner/fgsm/both_norm2e2/noise1_output \
 --ground_truth_path testing/kitti_scene_flow_test_disparity.txt \
@@ -18,8 +18,8 @@ python src/run_transferability.py \
 --device gpu
 
 python src/run_transferability.py \
---image0_path testing/kitti_scene_flow_image0.txt \
---image1_path testing/kitti_scene_flow_image1.txt \
+--image0_path testing/kitti_scene_flow_test_image0.txt \
+--image1_path testing/kitti_scene_flow_test_image1.txt \
 --noise0_dirpath perturb_models/deeppruner/fgsm/both_norm1e2/noise0_output \
 --noise1_dirpath perturb_models/deeppruner/fgsm/both_norm1e2/noise1_output \
 --ground_truth_path testing/kitti_scene_flow_test_disparity.txt \
@@ -31,8 +31,8 @@ python src/run_transferability.py \
 --device gpu
 
 python src/run_transferability.py \
---image0_path testing/kitti_scene_flow_image0.txt \
---image1_path testing/kitti_scene_flow_image1.txt \
+--image0_path testing/kitti_scene_flow_test_image0.txt \
+--image1_path testing/kitti_scene_flow_test_image1.txt \
 --noise0_dirpath perturb_models/deeppruner/fgsm/both_norm5e3/noise0_output \
 --noise1_dirpath perturb_models/deeppruner/fgsm/both_norm5e3/noise1_output \
 --ground_truth_path testing/kitti_scene_flow_test_disparity.txt \
@@ -44,8 +44,8 @@ python src/run_transferability.py \
 --device gpu
 
 python src/run_transferability.py \
---image0_path testing/kitti_scene_flow_image0.txt \
---image1_path testing/kitti_scene_flow_image1.txt \
+--image0_path testing/kitti_scene_flow_test_image0.txt \
+--image1_path testing/kitti_scene_flow_test_image1.txt \
 --noise0_dirpath perturb_models/deeppruner/fgsm/both_norm2e3/noise0_output \
 --noise1_dirpath perturb_models/deeppruner/fgsm/both_norm2e3/noise1_output \
 --ground_truth_path testing/kitti_scene_flow_test_disparity.txt \
@@ -58,8 +58,8 @@ python src/run_transferability.py \
 
 # DeepPruner -> PSMNet
 python src/run_transferability.py \
---image0_path testing/kitti_scene_flow_image0.txt \
---image1_path testing/kitti_scene_flow_image1.txt \
+--image0_path testing/kitti_scene_flow_test_image0.txt \
+--image1_path testing/kitti_scene_flow_test_image1.txt \
 --noise0_dirpath perturb_models/deeppruner/fgsm/both_norm2e2/noise0_output \
 --noise1_dirpath perturb_models/deeppruner/fgsm/both_norm2e2/noise1_output \
 --ground_truth_path testing/kitti_scene_flow_test_disparity.txt \
@@ -71,8 +71,8 @@ python src/run_transferability.py \
 --device gpu
 
 python src/run_transferability.py \
---image0_path testing/kitti_scene_flow_image0.txt \
---image1_path testing/kitti_scene_flow_image1.txt \
+--image0_path testing/kitti_scene_flow_test_image0.txt \
+--image1_path testing/kitti_scene_flow_test_image1.txt \
 --noise0_dirpath perturb_models/deeppruner/fgsm/both_norm1e2/noise0_output \
 --noise1_dirpath perturb_models/deeppruner/fgsm/both_norm1e2/noise1_output \
 --ground_truth_path testing/kitti_scene_flow_test_disparity.txt \
@@ -84,8 +84,8 @@ python src/run_transferability.py \
 --device gpu
 
 python src/run_transferability.py \
---image0_path testing/kitti_scene_flow_image0.txt \
---image1_path testing/kitti_scene_flow_image1.txt \
+--image0_path testing/kitti_scene_flow_test_image0.txt \
+--image1_path testing/kitti_scene_flow_test_image1.txt \
 --noise0_dirpath perturb_models/deeppruner/fgsm/both_norm5e3/noise0_output \
 --noise1_dirpath perturb_models/deeppruner/fgsm/both_norm5e3/noise1_output \
 --ground_truth_path testing/kitti_scene_flow_test_disparity.txt \
@@ -97,8 +97,8 @@ python src/run_transferability.py \
 --device gpu
 
 python src/run_transferability.py \
---image0_path testing/kitti_scene_flow_image0.txt \
---image1_path testing/kitti_scene_flow_image1.txt \
+--image0_path testing/kitti_scene_flow_test_image0.txt \
+--image1_path testing/kitti_scene_flow_test_image1.txt \
 --noise0_dirpath perturb_models/deeppruner/fgsm/both_norm2e3/noise0_output \
 --noise1_dirpath perturb_models/deeppruner/fgsm/both_norm2e3/noise1_output \
 --ground_truth_path testing/kitti_scene_flow_test_disparity.txt \
