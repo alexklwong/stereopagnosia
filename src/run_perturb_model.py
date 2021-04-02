@@ -50,7 +50,7 @@ parser.add_argument('--probability_diverse_input',
     type=float, default=0.00, help='Probability (p) to use diverse input')
 # Stereo model settings
 parser.add_argument('--stereo_method',
-    type=str, default='psmnet', help='Stereo method available: %s' % settings.STEREO_METHOD_AVAILABLE)
+    type=str, default=settings.STEREO_METHOD, help='Stereo method available: %s' % settings.STEREO_METHOD_AVAILABLE)
 parser.add_argument('--stereo_model_restore_path',
     type=str, default='', help='Path to restore model checkpoint')
 # Output settings
@@ -65,9 +65,14 @@ args = parser.parse_args()
 
 if __name__ == '__main__':
 
+    args.perturb_method = args.perturb_method.lower()
+
+    args.perturb_mode = args.perturb_mode.lower()
+
     args.stereo_method = args.stereo_method.lower()
 
     args.device = args.device.lower()
+
     if args.device not in [settings.GPU, settings.CPU, settings.CUDA]:
         args.device = settings.CUDA
 

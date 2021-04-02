@@ -40,6 +40,7 @@ PERTURB_METHOD_AVAILABLE            = ['fgsm',
 PERTURB_MODE_AVAILABLE              = ['both', 'left', 'right']
 
 # Stereo method settings
+STEREO_METHOD_AVAILABLE             = ['psmnet', 'deeppruner', 'aanet']
 STEREO_METHOD                       = 'psmnet'
 STEREO_MODEL_RESTORE_PATH           = os.path.join('pretrained_models', 'PSMNet', 'pretrained_model_KITTI2015.tar')
 
@@ -53,11 +54,11 @@ DEEPPRUNER_COST_AGGREGATOR_SCALE    = 4
 OUTPUT_PATH                         = os.path.join('perturb_models', 'psmnet', 'fgsm', 'both_norm2e2')
 
 # Hardware settings
-DEVICE                          = 'cuda'
-CUDA                            = 'cuda'
-CPU                             = 'cpu'
-GPU                             = 'gpu'
-N_THREAD                        = 8
+DEVICE                              = 'cuda'
+CUDA                                = 'cuda'
+CPU                                 = 'cpu'
+GPU                                 = 'gpu'
+N_THREAD                            = 8
 
 # Other Settings
-RANDOM_SEED                     = 1
+RANDOM_SEED                         = 1
