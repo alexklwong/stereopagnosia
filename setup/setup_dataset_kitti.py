@@ -26,8 +26,8 @@ TEST_REFS_DIRPATH = 'testing'
 # KITTI 2012 dataset (stereo flow)
 STEREO_FLOW_ROOT_DIRPATH = os.path.join('data', 'kitti_stereo_flow', 'training')
 
-STEREO_FLOW_IMAGE0_DIRPATH = os.path.join(STEREO_FLOW_ROOT_DIRPATH, 'image_2')
-STEREO_FLOW_IMAGE1_DIRPATH = os.path.join(STEREO_FLOW_ROOT_DIRPATH, 'image_3')
+STEREO_FLOW_IMAGE0_DIRPATH = os.path.join(STEREO_FLOW_ROOT_DIRPATH, 'colored_0')
+STEREO_FLOW_IMAGE1_DIRPATH = os.path.join(STEREO_FLOW_ROOT_DIRPATH, 'colored_1')
 STEREO_FLOW_DISPARITY_DIRPATH = os.path.join(STEREO_FLOW_ROOT_DIRPATH, 'disp_occ')
 
 STEREO_FLOW_ALL_IMAGE0_FILEPATH = os.path.join(TRAIN_REFS_DIRPATH, 'kitti_stereo_flow_all_image0.txt')

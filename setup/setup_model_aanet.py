@@ -64,7 +64,7 @@ STEREO_FLOW_EXTRAS_DISPARITY_DIRPATH = os.path.join(
 STEREO_FLOW_EXTRAS_DISPARITY_FILEPATH = os.path.join(
     STEREO_FLOW_EXTRAS_ROOT_DIRPATH, 'kitti_2012_disp_occ_pseudo_gt.zip')
 
-STEREO_FLOW_IMAGE0_DIRPATH = os.path.join(STEREO_FLOW_ROOT_DIRPATH, 'image_2')
+STEREO_FLOW_IMAGE0_DIRPATH = os.path.join(STEREO_FLOW_ROOT_DIRPATH, 'colored_0')
 
 STEREO_FLOW_EXTRAS_ALL_DISPARITY_FILEPATH = os.path.join(TRAIN_REFS_DIRPATH, 'kitti_stereo_flow_all_disparity_pseudo.txt')
 STEREO_FLOW_EXTRAS_TRAIN_DISPARITY_FILEPATH = os.path.join(TRAIN_REFS_DIRPATH, 'kitti_stereo_flow_train_disparity_pseudo.txt')
