@@ -18,6 +18,9 @@ If this work is useful to you, please consider citing our paper:
   year={2021}
 }
 ```
+**Looking for our latest work?**
+
+Check out our CVPR 2022 paper on [stereoscopic universal perturbations](https://github.com/alexklwong/stereoscopic-universal-perturbations) that generalizes across images, models and domains!
 
 **Table of Contents**
 1. [About adversarial perturbations](#about-adversarial-perturbations)
@@ -67,6 +70,24 @@ source stereopagnosia-py3env/bin/activate
 pip install opencv-python scipy scikit-learn scikit-image matplotlib future yacs pandas gdown
 pip install numpy==1.16.4 gast==0.2.2
 pip install Pillow==6.1.0 torch==1.2.0 torchvision==0.4.0 tensorboard==1.14.0
+```
+
+In order to run the experiments for AANet, you will need to compile their deformable convolutions (deform_conv_cuda).
+
+Because Ubuntu 20.04 ships with gcc8, you may have trouble compiling using their [instructions] (https://github.com/alexklwong/stereopagnosia/tree/master/external_src/aanet#installation). 
+
+For the ease of use, you can consider copying the binary that matches your system in 
+```
+external_src/aanet/nets/deform_conv/ubuntu1604
+external_src/aanet/nets/deform_conv/ubuntu2004
+```
+into
+```
+external_src/aanet/nets/deform_conv
+```
+For example, when using Ubuntu 20.04 with python 3.7:
+```
+cp external_src/aanet/nets/deform_conv/ubuntu2004/deform_conv_cuda.cpython-37m-x86_64-linux-gnu.so external_src/aanet/nets/deform_conv
 ```
 
 ## Setting up your data directories <a name="setting-up-data-directories"></a>
