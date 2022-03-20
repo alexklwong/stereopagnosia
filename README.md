@@ -74,7 +74,7 @@ pip install Pillow==6.1.0 torch==1.2.0 torchvision==0.4.0 tensorboard==1.14.0
 
 In order to run the experiments for AANet, you will need to compile their deformable convolutions (deform_conv_cuda).
 
-Because Ubuntu 20.04 ships with gcc8, you may have trouble compiling using their [instructions] (https://github.com/alexklwong/stereopagnosia/tree/master/external_src/aanet#installation). 
+Because Ubuntu 20.04 ships with gcc8, you may have trouble compiling using their [instructions](https://github.com/alexklwong/stereopagnosia/tree/master/external_src/aanet#installation). 
 
 For the ease of use, you can consider copying the binary that matches your system in 
 ```
